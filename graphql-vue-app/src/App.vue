@@ -4,7 +4,15 @@ import { useQuery } from '@vue/apollo-composable';
 import ALL_BOOKS_QUERY from './graphql/allBooks.query.gql';
 
 const searchTerm = ref('');
-const { result, loading, error } = useQuery(ALL_BOOKS_QUERY, () => ({ search: searchTerm.value }));
+const { result, loading, error } = useQuery(
+  ALL_BOOKS_QUERY, 
+  () => ({
+    search: searchTerm.value
+  }),
+  () => ({
+    debounce: 500
+  })
+);
 </script>
 
 <template>
