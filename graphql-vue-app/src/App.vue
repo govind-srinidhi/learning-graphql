@@ -1,9 +1,12 @@
 <script setup>
 import { ref } from 'vue';
 import { useQuery } from '@vue/apollo-composable';
+
+import EditRating from './components/edit-rating.vue';
 import ALL_BOOKS_QUERY from './graphql/allBooks.query.gql';
 
 const searchTerm = ref('');
+const activeEditBook = ref(null);
 const { result, loading, error } = useQuery(
   ALL_BOOKS_QUERY, 
   () => ({
@@ -16,11 +19,25 @@ const { result, loading, error } = useQuery(
 </script>
 
 <template>
-  <input v-model="searchTerm"/>
-
-  <p v-if="loading">Loading...</p>
-  <p v-else-if="error">Something went wrong..</p>
+  <p>
+    <input v-model="searchTerm"/>
+  </p>
+  
+  <edit-rating
+    v-if="activeEditBook"
+    :id="activeEditBook.id"
+    :rating="activeEditBook.rating"
+    :title="activeEditBook.title"
+    @close="activeEditBook = null"
+  />
   <template v-else>
-    <div v-for="book in result?.allBooks">{{ book.title }}</div>
+    <p v-if="loading">Loading...</p>
+    <p v-else-if="error">Something went wrong..</p>
+    <template v-else>
+      <p v-for="book in result?.allBooks">
+        {{ book.title }} - {{ book.rating }}
+        <button @click="activeEditBook = book">Edit rating</button>
+      </p>
+    </template>
   </template>
 </template>
