@@ -4,7 +4,7 @@
       "id": "n12clfp3K",
       "title": "The Guardians",
       "description": "In the small Florida town of Seabrook, a young lawyer named Keith Russo was shot dead at his desk as he worked late one night. The killer left no clues. There were no witnesses, no one with a motive. But the police soon came to suspect Quincy Miller, a young black man who was once a client of Russo’s...",
-      "rating": 4.45,
+      "rating": 3.4,
       "author": "John Grisham",
       "year": 1970
     },
@@ -55,6 +55,70 @@
       "rating": 4.6,
       "author": "J. D. Salinger",
       "year": 1951
+    },
+    {
+      "id": "-cm--lxkn",
+      "title": "Vitest",
+      "description": "Intutive library to perform tests on Vue",
+      "rating": 4.56,
+      "year": 2023,
+      "author": "Mr. Test"
+    },
+    {
+      "id": "epVhdJUC0",
+      "title": "adasd",
+      "description": "asdsad",
+      "rating": 3.4,
+      "year": 2019,
+      "author": "asdasda"
+    },
+    {
+      "id": "tSQlly3BH",
+      "title": "test",
+      "description": "asd",
+      "rating": null,
+      "year": 2023,
+      "author": "asda"
+    },
+    {
+      "id": "SRq0sgU1N",
+      "title": "zxcc",
+      "description": "sadda",
+      "rating": 8.5,
+      "year": 2012,
+      "author": "tes"
+    },
+    {
+      "id": "UQ0LNnXxX",
+      "title": "newtestbook",
+      "description": "testing new book",
+      "rating": 3.4,
+      "year": 2023,
+      "author": "NTB"
+    },
+    {
+      "id": "MDPbY9QCb",
+      "title": "testrating",
+      "description": "testdescription",
+      "rating": 9.7,
+      "year": 2014,
+      "author": "yo"
+    },
+    {
+      "id": "mGF7akoa_",
+      "title": "testnewbook2",
+      "description": "testing",
+      "rating": 7.8,
+      "year": 2013,
+      "author": "auth2"
+    },
+    {
+      "id": "XjHyoELuv",
+      "title": "new book 1",
+      "description": "newbook",
+      "rating": 9.1,
+      "year": 2019,
+      "author": "test new book"
     }
   ]
 }
